@@ -2,7 +2,6 @@ from flask import Flask, jsonify, request
 
 app = Flask(__name__)
 
-# Base de datos simulada
 productos = [{"id": 1, "nombre": "Manzana", "precio": 0.5}]
 
 @app.route('/productos', methods=['GET'])
